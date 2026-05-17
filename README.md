@@ -70,8 +70,7 @@ Reads incoming application emails and stores structured candidate information.
 - Writes candidate data into Google Sheets
 - Handles structured intake logic
 
-📸 Insert Screenshot:
-`masterschool-1-candidate-intake.png`
+![Candidate Intake Workflow](images/01_candidate_intake.png)
 
 ---
 
@@ -84,8 +83,7 @@ Uses AI classification logic to identify whether incoming emails are valid appli
 - Routing logic for application vs. non-application emails
 - Workflow branching
 
-📸 Insert Screenshot:
-`masterschool-2-prompt-engineering.png`
+![AI Classification Workflow](images/02_classifies_emails.png)
 
 ---
 
@@ -101,8 +99,7 @@ Main orchestration workflow for extracting, cleaning, parsing, and matching cand
 - Conditional workflow execution
 - Tally link generation for missing data
 
-📸 Insert Screenshot:
-`masterschool-4-gathering-information.png`
+![Information Extraction Workflow](images/04_gathering_information.png)
 
 ---
 
@@ -116,8 +113,7 @@ Handles missing phone number collection through webhook automation.
 - Automatic Google Sheets updates
 - Matching records by email address
 
-📸 Insert Screenshot:
-`masterschool-4-tally-webhook.png`
+![Webhook + Tally Workflow](images/04_tally_webhook.png)
 
 ---
 
@@ -131,8 +127,7 @@ Processes incoming job postings and standardizes data before storing it.
 - Structured output formatting
 - Automated lead confirmation emails
 
-📸 Insert Screenshot:
-`masterschool-5-webhook-job-intake.png`
+![Job Intake Workflow](images/05_job_intake_workflow.png)
 
 ---
 
@@ -153,6 +148,27 @@ Candidate ↔ Job Matching
         ↓
 Missing Data Handling via Tally + Webhooks
 ```
+
+---
+
+## Data Layer & Matching Logic
+
+Airtable was used as a lightweight relational database layer to organize:
+- candidate profiles
+- incoming job postings
+- skill matching
+- location matching
+- experience comparisons
+- candidate-job relationships
+
+The structure enabled easier filtering, matching visualization, and scalable workflow organization.
+
+![Airtable Matching System](images/06_airtable_matching.png) 
+
+
+Optional: View Airtable Structure (Read-Only)
+
+[Open Airtable Base](https://airtable.com/invite/l?inviteId=invFhZ0Z3XibdTRgR&inviteToken=59283ced6816eb0b00a52d43fc4920183062c47c612ffd363bc4c8813f0c8aab&utm_medium=email&utm_source=product_team&utm_content=transactional-alerts)
 
 ---
 
@@ -195,25 +211,6 @@ Potential future improvements include:
 - deployment of a unified end-to-end workflow
 - automated candidate ranking
 - improved error handling and monitoring
-
----
-
-# Screenshots
-
-## Candidate Intake Workflow
-📸 Add Screenshot Here
-
-## AI Classification Workflow
-📸 Add Screenshot Here
-
-## Information Extraction Workflow
-📸 Add Screenshot Here
-
-## Webhook + Tally Workflow
-📸 Add Screenshot Here
-
-## Job Intake Workflow
-📸 Add Screenshot Here
 
 ---
 
