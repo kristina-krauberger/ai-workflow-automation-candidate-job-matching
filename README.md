@@ -201,19 +201,6 @@ The project was intentionally built in modular parts to better understand workfl
 
 ---
 
-# Future Improvements
-
-Potential future improvements include:
-- improved matching logic
-- Airtable-based relational storage
-- dashboard visualization
-- better scoring systems
-- deployment of a unified end-to-end workflow
-- automated candidate ranking
-- improved error handling and monitoring
-
----
-
 # About
 
 This project was created as part of the Masterschool Software Engineering & Automation program and focuses on real-world AI-assisted workflow automation concepts using modular n8n architecture.
